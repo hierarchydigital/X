@@ -159,7 +159,7 @@ margin-left: 600px;
 .sidenav {
     position: fixed;
     top: 0;
-    left: -250px; /* Initially hidden off-screen */
+    left: -300px; /* Initially hidden off-screen */
     width: 250px;
     height: 100%;
     background-color: #333;
