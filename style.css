@@ -2,6 +2,8 @@ body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    display:flexbox
+
 }
 
 /* Add this to your HTML head */
@@ -11,30 +13,40 @@ body, h1, h2, h3, p {
     display: flex;
     padding-top: 10px;
     font-family: "Roboto", system-ui;
+    vertical-align: top ;
+    display:flexbox
 }
 
 .profile {
     width: 40px;
-    margin-left: 910px;
-    padding-right: 28px;
+    margin-left: 860px;
+    margin-right: 450px;
+    padding-right: 30px;
 }
 
 .logo {
     width: 40px;
     border-radius: 50%;
-    margin-left: 16px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 .upgrade{
-    padding-left: 12px;
-    padding-right: 12px;
-    margin-left: 760px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-left: 330px;
+    margin-right: 20px;
     background-color: white;
     border-radius: 90px;
     border-color: rgb(110, 110, 110);
     border-style: solid;
     font-weight: bold;
     font-size: 15px;
+
+    color: black;
+
 }
 
 .menu {
@@ -48,7 +60,8 @@ body, h1, h2, h3, p {
     width: 30px;
     padding-left: 12px;
     padding-right: 12px;
-    margin-left: 670px;
+    margin-left: 700px;
+    margin-right: 10px;
     font-weight: bold;
     font-size: 30px;
     color: rgb(0, 0, 0);
@@ -60,7 +73,7 @@ body, h1, h2, h3, p {
     width: 30px;
     padding-left: 12px;
     padding-right: 12px;
-    margin-left: 400px;
+    margin-left: 320px;
     font-weight: bold;
     font-size: 30px;
     color: rgb(134, 134, 134);
@@ -78,9 +91,11 @@ body {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     padding: 15px;
     margin: 10px;
-    width: 800px;
+    width: 400px;
     align-content: center;
-margin-left: 600px;
+    margin-left: 750px;
+    margin-right: 750px;
+    display:flexbox
 }
 
 .tweet-header {
@@ -159,28 +174,51 @@ margin-left: 600px;
 .sidenav {
     position: fixed;
     top: 0;
-    left: -300px; /* Initially hidden off-screen */
-    width: 250px;
+    left: -500px; /* Initially hidden off-screen */
+    width: 230px;
     height: 100%;
     background-color: #333;
     padding-top: 60px;
     transition: left 0.3s ease; /* Smooth transition for showing/hiding */
     z-index: 1000; /* Ensure it appears above other content */
-    <span class="close-btn" id="close-btn">&times;</span> <!-- Close button -->
-
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-bottom: 20px; /* Add some padding at the bottom */
 }
 
 .sidenav a {
-    padding: 15px 25px;
+    padding: 8px 8px 8px 32px; /* Adjust padding for links */
     text-decoration: none;
     font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1; /* Change color on hover */
+}
+
+.close-btn {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+
+.sidenav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 20px;
     color: white;
     display: block;
     transition: background 0.3s; /* Smooth transition for hover */
 }
 
 .sidenav a:hover {
-    background: #575757; /* Change color on hover */
+    background: #006cb4; /* Change color on hover */
 }
 
 .sidenav.active {
@@ -192,10 +230,11 @@ margin-left: 600px;
 }
 .close-btn {
 position: absolute;
-top: 15px;
-right: 15px;
-font-size: 30px;
-color: rgb(0, 0, 0);
+top: 100px;
+right: 400px;
+left: 400px;
+font-size: 50px;
+color: rgb(255, 255, 255);
 cursor: pointer;
 transition: color 0.3s;
 }
@@ -204,16 +243,6 @@ transition: color 0.3s;
     color: #ff4d4d; /* Change color on hover */
 }
 
-.timestamp {
-    position: absolute; /* Absolute positioning */
-    bottom: -650px; /* Adjust as needed */
-    right: 550px; /* Adjust as needed */
-    color: white; /* Text color */
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    padding: 5px; /* Padding around the text */
-    border-radius: 5px; /* Rounded corners */
-    font-size: 16px; /* Adjust font size */
-}
 
 
 
@@ -260,4 +289,17 @@ transition: color 0.3s;
 .heart-checkbox input:checked ~ .heart:before,
 .heart-checkbox input:checked ~ .heart:after {
     background-color: #ff0000;
+}
+
+
+.video-container {
+    overflow: hidden;
+    border-radius: 20px; /* Adjust the border-radius for rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.video-container video {
+    width: 100%;
+    height: auto;
+    border-radius: 20px; /* Match the border-radius of the container */
+    object-fit: cover;
 }
