@@ -1,11 +1,14 @@
+/* Desktop-specific CSS */
 body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Add this to your HTML head */
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+body {
+    font-family: Roboto;
+    background-color: #f5f8fa;
+}
 
 .header {
     display: flex;
@@ -25,7 +28,7 @@ body, h1, h2, h3, p {
     margin-left: 16px;
 }
 
-.upgrade{
+.upgrade {
     padding-left: 12px;
     padding-right: 12px;
     margin-left: 760px;
@@ -67,11 +70,6 @@ body, h1, h2, h3, p {
     padding-bottom: 0px;
 }
 
-body {
-    font-family: Roboto;
-    background-color: #f5f8fa;
-}
-
 .tweet-container {
     background-color: white;
     border-radius: 10px;
@@ -80,7 +78,7 @@ body {
     margin: 10px;
     width: 800px;
     align-content: center;
-margin-left: 600px;
+    margin-left: 600px;
 }
 
 .tweet-header {
@@ -121,39 +119,8 @@ margin-left: 600px;
     border-radius: 10px; 
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .header, .menu {
-        flex-direction: column; /* Stack header and menu on smaller screens */
-        align-items: flex-start; /* Align items to the left */
-    }
-    .profile, .upgrade, .for-you, .following {
-        margin-left: 0; /* Reset margins for smaller screens */
-        width: auto; /* Reset width */
-    }
-}
-
-@media (max-width: 480px) {
-    .username {
-        font-size: 20px; /* Smaller font size for username on small screens */
-    }
-    .handle {
-        font-size: 14px; /* Smaller font size for handle */
-    }
-
-    .tweet-container {
-        width: 100%; /* Full width for tweet container on small screens */
-        margin: 10px 0; /* Adjust margin */
-    }
-}
-
-.stats{
+.stats {
     padding-top: 4px;
-}
-
-.logo {
-
-    transition: transform 0.3s ease; /* Smooth transition for rotation */
 }
 
 .sidenav {
@@ -166,8 +133,6 @@ margin-left: 600px;
     padding-top: 60px;
     transition: left 0.3s ease; /* Smooth transition for showing/hiding */
     z-index: 1000; /* Ensure it appears above other content */
-    <span class="close-btn" id="close-btn">&times;</span> <!-- Close button -->
-
 }
 
 .sidenav a {
@@ -187,19 +152,74 @@ margin-left: 600px;
     left: 0; /* Show the menu */
 }
 
-.ham-icon.rotate {
-    transform: rotate(90deg); /* Rotate the image */
-}
 .close-btn {
-position: absolute;
-top: 15px;
-right: 15px;
-font-size: 30px;
-color: rgb(0, 0, 0);
-cursor: pointer;
-transition: color 0.3s;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: color 0.3s;
 }
 
 .close-btn:hover {
     color: #ff4d4d; /* Change color on hover */
+}
+
+.ham-icon.rotate {
+    transform: rotate(90deg); /* Rotate the image */
+}
+
+.logo {
+    transition: transform 0.3s ease; /* Smooth transition for rotation */
+}
+
+/* Mobile-specific CSS */
+/* Applies to screens smaller than 480px */
+@media (max-width: 480px) {
+    body, h1, h2, h3, p {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Roboto;
+        background-color: #f5f8fa;
+    }
+
+    .header, .menu {
+        flex-direction: column; /* Stack header and menu on smaller screens */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .profile, .upgrade, .for-you, .following {
+        margin-left: 0; /* Reset margins for smaller screens */
+        width: auto; /* Reset width */
+    }
+
+    .username {
+        font-size: 20px; /* Smaller font size for username on small screens */
+    }
+
+    .handle {
+        font-size: 14px; /* Smaller font size for handle */
+    }
+
+    .tweet-container {
+        width: 100%; /* Full width for tweet container on small screens */
+        margin: 10px 0; /* Adjust margin */
+    }
+
+    .sidenav {
+        width: 100%; /* Full width for mobile */
+    }
+
+    .sidenav a {
+        font-size: 20px; /* Smaller font for sidenav links */
+    }
+    
+    .close-btn {
+        font-size: 25px; /* Smaller close button */
+    }
 }
