@@ -121,6 +121,31 @@ margin-left: 600px;
     border-radius: 10px; 
 }
 
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .header, .menu {
+        flex-direction: column; /* Stack header and menu on smaller screens */
+        align-items: flex-start; /* Align items to the left */
+    }
+    .profile, .upgrade, .for-you, .following {
+        margin-left: 0; /* Reset margins for smaller screens */
+        width: auto; /* Reset width */
+    }
+}
+
+@media (max-width: 480px) {
+    .username {
+        font-size: 20px; /* Smaller font size for username on small screens */
+    }
+    .handle {
+        font-size: 14px; /* Smaller font size for handle */
+    }
+
+    .tweet-container {
+        width: 100%; /* Full width for tweet container on small screens */
+        margin: 10px 0; /* Adjust margin */
+    }
+}
 
 .stats{
     padding-top: 4px;
@@ -134,7 +159,7 @@ margin-left: 600px;
 .sidenav {
     position: fixed;
     top: 0;
-    left: -300px; /* Initially hidden off-screen */
+    left: -250px; /* Initially hidden off-screen */
     width: 250px;
     height: 100%;
     background-color: #333;
@@ -177,5 +202,16 @@ transition: color 0.3s;
 
 .close-btn:hover {
     color: #ff4d4d; /* Change color on hover */
+}
+
+.timestamp {
+    position: absolute; /* Absolute positioning */
+    bottom: -650px; /* Adjust as needed */
+    right: 550px; /* Adjust as needed */
+    color: white; /* Text color */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 5px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Adjust font size */
 }
 
