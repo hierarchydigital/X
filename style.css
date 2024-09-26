@@ -215,3 +215,43 @@ transition: color 0.3s;
     font-size: 16px; /* Adjust font size */
 }
 
+
+.heart-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    margin-left:10px;
+}
+.heart-checkbox .heart {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left:10px;
+}
+.heart-checkbox .heart:before, 
+.heart-checkbox .heart:after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 40px;
+    border-radius: 25px 25px 0 0;
+    background-color: #ccc;
+    transition: background-color 0.3s ease;
+}
+.heart-checkbox .heart:before {
+    left: 12.5px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+.heart-checkbox .heart:after {
+    left: -12.5px;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+.heart-checkbox input:checked ~ .heart:before,
+.heart-checkbox input:checked ~ .heart:after {
+    background-color: #ff0000;
+}
