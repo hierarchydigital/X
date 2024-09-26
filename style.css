@@ -19,7 +19,7 @@ body, h1, h2, h3, p {
 
 .profile {
     width: 40px;
-    margin-left: 860px;
+    margin-left: 300px;
     margin-right: 450px;
     padding-right: 30px;
 }
@@ -28,6 +28,7 @@ body, h1, h2, h3, p {
     width: 40px;
     border-radius: 50%;
     margin-left: 20px;
+    margin-right: ;
     margin-top: 20px;
 }
 
@@ -36,7 +37,7 @@ body, h1, h2, h3, p {
     padding-right: 10px;
     padding-top: 12px;
     padding-bottom: 12px;
-    margin-left: 330px;
+    margin-left: 900px;
     margin-right: 20px;
     background-color: white;
     border-radius: 90px;
@@ -60,7 +61,7 @@ body, h1, h2, h3, p {
     width: 30px;
     padding-left: 12px;
     padding-right: 12px;
-    margin-left: 700px;
+    margin-left: 630px;
     margin-right: 10px;
     font-weight: bold;
     font-size: 30px;
@@ -136,7 +137,50 @@ body {
     border-radius: 10px; 
 }
 
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .header, .menu {
+       
+        align-items: flex-start; /* Align items to the left */
+    }
+    .profile, .upgrade, .for-you, .following  {
+        margin-left: 0;
+        margin-right: 110px; /* Reset margins for smaller screens */
+        width: auto; /* Reset width */
+    }
+}
 
+.for-you, .following{
+    padding-left: 50px;
+}
+
+.profile{
+    margin-left: 150px;
+}
+
+.upgrade{
+    margin-right: -1400px;
+}
+
+.tweet-container{
+    margin-right: 100000;
+    margin-left: 5000;
+
+}
+
+@media (max-width: 480px) {
+    .username {
+        font-size: 20px; /* Smaller font size for username on small screens */
+    }
+    .handle {
+        font-size: 14px; /* Smaller font size for handle */
+    }
+
+    .tweet-container {
+        width: 100%; /* Full width for tweet container on small screens */
+        margin: 10px 0; /* Adjust margin */
+    }
+}
 
 .stats{
     padding-top: 4px;
@@ -207,8 +251,8 @@ body {
 .close-btn {
 position: absolute;
 top: 100px;
-right: 4px;
-left: 4px;
+right: 400px;
+left: px;
 font-size: 50px;
 color: rgb(255, 255, 255);
 cursor: pointer;
