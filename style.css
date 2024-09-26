@@ -225,8 +225,8 @@ transition: color 0.3s;
 }
 .heart-checkbox .heart {
     position: relative;
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
     background-color: transparent;
     cursor: pointer;
     transition: all 0.3s ease;
