@@ -136,31 +136,7 @@ body {
     border-radius: 10px; 
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .header, .menu {
-        flex-direction: column; /* Stack header and menu on smaller screens */
-        align-items: flex-start; /* Align items to the left */
-    }
-    .profile, .upgrade, .for-you, .following {
-        margin-left: 0; /* Reset margins for smaller screens */
-        width: auto; /* Reset width */
-    }
-}
 
-@media (max-width: 480px) {
-    .username {
-        font-size: 20px; /* Smaller font size for username on small screens */
-    }
-    .handle {
-        font-size: 14px; /* Smaller font size for handle */
-    }
-
-    .tweet-container {
-        width: 100%; /* Full width for tweet container on small screens */
-        margin: 10px 0; /* Adjust margin */
-    }
-}
 
 .stats{
     padding-top: 4px;
