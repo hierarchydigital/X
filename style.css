@@ -1,0 +1,217 @@
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Add this to your HTML head */
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+.header {
+    display: flex;
+    padding-top: 10px;
+    font-family: "Roboto", system-ui;
+}
+
+.profile {
+    width: 40px;
+    margin-left: 910px;
+    padding-right: 28px;
+}
+
+.logo {
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 16px;
+}
+
+.upgrade{
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: 760px;
+    background-color: white;
+    border-radius: 90px;
+    border-color: rgb(110, 110, 110);
+    border-style: solid;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.menu {
+    display: flex;
+    padding-top: 10px;
+    font-family: "Roboto", system-ui;
+    padding-bottom: 0px;
+}
+
+.for-you {
+    width: 30px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: 670px;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    padding-bottom: 0px;
+}
+
+.following {
+    width: 30px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: 400px;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(134, 134, 134);
+    padding-bottom: 0px;
+}
+
+body {
+    font-family: Roboto;
+    background-color: #f5f8fa;
+}
+
+.tweet-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 10px;
+    width: 800px;
+    align-content: center;
+margin-left: 600px;
+}
+
+.tweet-header {
+    display: flex;
+    align-items: center;
+}
+
+.profile-link {
+    margin-right: 10px; 
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.handle {
+    color: gray; 
+}
+
+.tweet-content {
+    margin: 10px 0; 
+    line-height: 1.4; 
+}
+
+.tweet-image img {
+    max-width: 100%; 
+    border-radius: 10px; 
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .header, .menu {
+        flex-direction: column; /* Stack header and menu on smaller screens */
+        align-items: flex-start; /* Align items to the left */
+    }
+    .profile, .upgrade, .for-you, .following {
+        margin-left: 0; /* Reset margins for smaller screens */
+        width: auto; /* Reset width */
+    }
+}
+
+@media (max-width: 480px) {
+    .username {
+        font-size: 20px; /* Smaller font size for username on small screens */
+    }
+    .handle {
+        font-size: 14px; /* Smaller font size for handle */
+    }
+
+    .tweet-container {
+        width: 100%; /* Full width for tweet container on small screens */
+        margin: 10px 0; /* Adjust margin */
+    }
+}
+
+.stats{
+    padding-top: 4px;
+}
+
+.logo {
+
+    transition: transform 0.3s ease; /* Smooth transition for rotation */
+}
+
+.sidenav {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initially hidden off-screen */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 60px;
+    transition: left 0.3s ease; /* Smooth transition for showing/hiding */
+    z-index: 1000; /* Ensure it appears above other content */
+    <span class="close-btn" id="close-btn">&times;</span> <!-- Close button -->
+
+}
+
+.sidenav a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: background 0.3s; /* Smooth transition for hover */
+}
+
+.sidenav a:hover {
+    background: #575757; /* Change color on hover */
+}
+
+.sidenav.active {
+    left: 0; /* Show the menu */
+}
+
+.ham-icon.rotate {
+    transform: rotate(90deg); /* Rotate the image */
+}
+.close-btn {
+position: absolute;
+top: 15px;
+right: 15px;
+font-size: 30px;
+color: rgb(0, 0, 0);
+cursor: pointer;
+transition: color 0.3s;
+}
+
+.close-btn:hover {
+    color: #ff4d4d; /* Change color on hover */
+}
+
+.timestamp {
+    position: absolute; /* Absolute positioning */
+    bottom: -650px; /* Adjust as needed */
+    right: 550px; /* Adjust as needed */
+    color: white; /* Text color */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 5px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Adjust font size */
+}
+
