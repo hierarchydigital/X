@@ -145,11 +145,11 @@ body {
     }
     .profile, .upgrade, .for-you, .following  {
         margin-left: 0;
-        margin-right: 110px; /* Reset margins for smaller screens */
+        margin-right: 0px; /* Reset margins for smaller screens */
         width: auto; /* Reset width */
     }
     .tweet-container{
-        margin-left: 35%;
+
     }
 }
 
