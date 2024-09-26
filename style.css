@@ -204,4 +204,14 @@ transition: color 0.3s;
     color: #ff4d4d; /* Change color on hover */
 }
 
+.timestamp {
+    position: absolute; /* Absolute positioning */
+    bottom: -650px; /* Adjust as needed */
+    right: 550px; /* Adjust as needed */
+    color: white; /* Text color */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 5px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Adjust font size */
+}
 
