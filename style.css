@@ -219,39 +219,44 @@ transition: color 0.3s;
 
 .heart-checkbox input {
     position: absolute;
-    opacity: 0;
+    opacity: 1;
     cursor: pointer;
-    margin-left:10px;
 }
+
 .heart-checkbox .heart {
     position: relative;
-    width: 15px;
-    height: 15px;
+    width: 5px;
     background-color: transparent;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin-left:10px;
+    margin-left: 4px;
+    margin-top: 10px;
+    padding-top: 10px;
 }
+
 .heart-checkbox .heart:before, 
 .heart-checkbox .heart:after {
     content: "";
     position: absolute;
-    width: 5px;
-    height: 20px;
-    border-radius: 25px 25px 0 0;
+    width: 12.5px; /* Reduced from 25px */
+    height: 20.5px;  /* Reduced from 40px */
+    border-radius: 12.5px 12.5px 0 0; /* Adjusted radius proportionally */
     background-color: #ccc;
     transition: background-color 0.3s ease;
 }
+
 .heart-checkbox .heart:before {
-    left: 12.5px;
+    left: 6px;  /* Adjusted based on the reduced size */
     transform: rotate(-45deg);
     transform-origin: 0 100%;
 }
+
 .heart-checkbox .heart:after {
-    left: -12.5px;
+    left: -6.25px; /* Adjusted based on the reduced size */
     transform: rotate(45deg);
     transform-origin: 100% 100%;
 }
+
 .heart-checkbox input:checked ~ .heart:before,
 .heart-checkbox input:checked ~ .heart:after {
     background-color: #ff0000;
