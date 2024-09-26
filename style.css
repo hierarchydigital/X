@@ -92,7 +92,7 @@ body {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     padding: 15px;
     margin: 10px;
-    width: 800px;
+    width: 500px;
     align-content: center;
     margin-left: 20px;
     margin-right: 20px;
@@ -141,7 +141,7 @@ body {
 @media (max-width: 768px) {
     .header, .menu {
        
-        align-items: flex-start; /* Align items to the left */
+        align-items: center; /* Align items to the left */
     }
     .profile, .upgrade, .for-you, .following  {
         margin-left: 0;
@@ -149,6 +149,7 @@ body {
         width: auto; /* Reset width */
     }
 }
+
 
 .for-you, .following{
     padding-left: 50px;
