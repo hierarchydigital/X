@@ -1,204 +1,338 @@
-<!DOCTYPE html>
-<html>
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display:flexbox
 
-    <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>X (Fomerly Twitter)</title>
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-            <link rel="icon" href="https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.1819120589.1727222400&semt=ais_hybrid" type="image/png">
-            <link rel="stylesheet" href="style.css">
-            
-    </head>
+}
 
-    <body>
-        <div class="header">
-            <a><img class="logo" src="IMAGES\PROFILE\zuvhxYuc_400x400.jpg" alt="Profile Picture"></a>
-            <a href="Home.html"><img class="profile" src="https://img.icons8.com/?size=100&id=de4vjQ6J061l&format=png&color=000000" alt="X Logo"></a>
-            <button class="upgrade">Upgrade</button>
-        </div> 
-        <div class="menu">
-            <div class="for-you">For&nbsp;You
-                <hr height="100px" color="#178fff" width="70px">
-            </div>
-            <div class="following">Following</div>
-        </div>
-        <hr>
-        <div class="tweet-container">
-            <div class="tweet-header">
-                <a href="Home.html" class="profile-link">
-                    <img class="logo" src="IMAGES/PROFILE/Elon.JPG" alt="Profile Picture">
-                </a>
-                <div class="user-info">
-                    <div class="username">Elon Musk 
-                        ✓
-                       </div>
-                    <div class="handle">@elonmusk &#183; 1d</div>
-                </div>
-            </div>
-            <div class="tweet-content">Great meeting with <a href="https://x.com/CyrilRamaphosa">@CyrilRamaphosa</a></div>
-            <div class="tweet-image">
-                <a href="Home.html">
-                    <img class="content" src="IMAGES/CONTENT/IMG_3327.JPG" alt="Content">
-                </a>
-                <div class="stats">💬10K &nbsp; 🔃24K&nbsp;&nbsp; &nbsp;
-                
-                    <label class="heart-checkbox">
-                    <input type="checkbox">
-                    <span class="heart"></span>
-                    </label>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;290K&nbsp; ılıl 57M &nbsp;⛉&nbsp;↑</div> 
-            </div>
-        </div>
-        <div class="tweet-container">
-            <div class="tweet-header">
-                <a href="Home.html" class="profile-link">
-                    <img class="logo" src="IMAGES\PROFILE\Matric.JPG" alt="Profile Picture">
-                </a>
-                <div class="user-info">
-                    <div class="username">META KOOL ✓</div>
-                    <div class="handle">@mett_9 &#183; 23m</div>
-                </div>
-            </div>
-            <div class="tweet-content">AI has truly taken the world by storm</div>
-            <div class="tweet-image">
-                <div class="video-container">
-    <video autoplay loop muted>
-        <source src="https://videos.pexels.com/video-files/4923273/4923273-hd_1920_1080_24fps.mp4">
-        Your browser does not support the video tag.
-    </video>
-</div>
-            </div>
-            <div class="stats">💬557 &nbsp; 🔃2.9K&nbsp; &nbsp;
-                
-                <label class="heart-checkbox">
-                <input type="checkbox">
-                <span class="heart"></span>
-                </label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                103K&nbsp; ılıl 2M &nbsp;⛉&nbsp;↑</div> 
-        </div>
-        <div class="tweet-container">
-            <div class="tweet-header">
-                <a href="Home.html" class="profile-link">
-                    <img class="logo" src="IMAGES\PROFILE\Guyself.JPG" alt="Profile Picture">
-                </a>
-                <div class="user-info">
-                    <div class="username">AVID ⛽</div>
-                    <div class="handle">@imtoojaded_ &#183; 1d</div>
-                </div>
-            </div>
-            <div class="tweet-content">From the bottom of my heart I just want my life to get better. Im so exhausted.</div>
-            <div class="tweet-image">
-            </div>
-            <div class="stats">💬104 &nbsp; 🔃14K&nbsp;&nbsp; &nbsp;
-                
-                <label class="heart-checkbox">
-                <input type="checkbox">
-                <span class="heart"></span>
-                </label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;46K&nbsp; ılıl 1M &nbsp;⛉&nbsp;↑</div> 
-        </div>
-        <div class="tweet-container">
-            <div class="tweet-header">
-                <a href="Home.html" class="profile-link">
-                    <img class="logo" src="IMAGES\PROFILE\F1 lecl .JPG" alt="Profile Picture">
-                </a>
-                <div class="user-info">
-                    <div class="username">blue</div>
-                    <div class="handle">@dearchars &#183; 1d</div>
-                </div>
-            </div>
-            <div class="tweet-content">when drivers used to swap leads multiple times in a lap</div>
-            <div class="tweet-image">
-                <a href="Home.html">
-                    <img class="content" src="IMAGES/CONTENT/IMG_3333.PNG" alt="Content">
-                </a>
-            </div>
-            <div class="stats">💬66 &nbsp; 🔃836&nbsp;&nbsp;
-                
-                <label class="heart-checkbox">
-                <input type="checkbox">
-                <span class="heart"></span>
-                </label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13K&nbsp; ılıl 603K &nbsp;⛉&nbsp;↑</div> 
-        </div>
-        <div class="tweet-container">
-            <div class="tweet-header">
-                <a href="Home.html" class="profile-link">
-                    <img class="logo" src="IMAGES\PROFILE\Cardin.JPG" alt="Profile Picture">
-                </a>
-                <div class="user-info">
-                    <div class="username">Cardi B  ✓</div>
-                    <div class="handle">@imcardib&#183; 6h</div>
-                </div>
-            </div>
-            <div class="tweet-content">A hurt Nikka will do the unthinkable.</div>
-            <div class="tweet-image">
-            </div>
-            <div class="stats">💬956 &nbsp; 🔃7.8K&nbsp;&nbsp; &nbsp;
-                
-                <label class="heart-checkbox">
-                <input type="checkbox">
-                <span class="heart"></span>
-                </label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;36K&nbsp; ılıl 3.3M &nbsp;⛉&nbsp;↑</div> 
-        </div>
-        <div class="tweet-container">
-            <div class="tweet-header">
-                <a href="Home.html" class="profile-link">
-                    <img class="logo" src="IMAGES\PROFILE\Matric.JPG" alt="Profile Picture">
-                </a>
-                <div class="user-info">
-                    <div class="username">THE REAL WORLD ✓</div>
-                    <div class="handle">@jointrw_ &#183; 1d</div>
-                </div>
-            </div>
-            <div class="tweet-content">2 billionaires looking at the third one.</div>
-            <div class="tweet-image">
-                <a href="Home.html">
-                    <img class="content" src="IMAGES\CONTENT\IMG_3341.JPG" alt="Content">
-                </a>
-            </div>
-            <div class="stats">💬243 &nbsp; 🔃2.7K&nbsp; &nbsp;
-                
-                <label class="heart-checkbox">
-                <input type="checkbox">
-                <span class="heart"></span>
-                </label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                53K&nbsp; ılıl 935K &nbsp;⛉&nbsp;↑</div> 
-        </div>
-        
 
-        <div class="sidenav" id="sidenav">
-            <div class="tweet-header">
-                <a href="https://x.com/1lethxbo" class="profile-link">
-                    <img class="logo" src="IMAGES\PROFILE\Profile.JPG" alt="Profile Picture">
-                </a>
-                <div class="user-info">
-                    <div class="username">LETHXBO</div>
-                    <div class="handle">@1lethxbo</div>
-                    <div class = "handle">7 Following</div>
-                    <div class = "handle">109 Followers</div>
-                </div>
-                
-            </div>
-            <a href="apply.html">👤 Profile</a>
-            <a href="status.html">𝕏 Premium</a>
-            <a href="students.html">⛉ Bookmarks</a>
-            <a href="staff.html">💼 Jobs</a>
-            <a href="contact.html">📄 Lists</a>
-            <a href="contact.html">🎙️ Spaces</a>
-            <a href="contact.html">💵 Monetisation</a>
-            &nbsp;
-            <a href="contact.html">Settings and Supoort</a>
-        </div>
-    </body>
-    <script src="automation.js"></script>
+.header {
+    display: flex;
+    padding-top: 10px;
+    font-family: "Roboto", system-ui;
+    vertical-align: top ;
+    display:flexbox
+}
 
+.profile {
+    width: 40px;
+    margin-left: 300px;
+    margin-right: 450px;
+    padding-right: 30px;
+}
+
+.logo {
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-right: ;
+}
+
+.upgrade{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-left: 900px;
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 90px;
+    border-color: rgb(110, 110, 110);
+    border-style: solid;
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+
+}
+
+.menu {
+    display: flex;
+    font-family: "Roboto", system-ui;
+
+}
+
+.for-you {
+    width: 30px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: 630px;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    padding-bottom: 0px;
+}
+
+.following {
+    width: 30px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: 320px;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(134, 134, 134);
+    padding-bottom: 0px;
+}
+
+body {
+    font-family: Roboto;
+    background-color: #ffffff;
+
+}
+
+.tweet-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 10px;
+    width: 100%;
+    display:flexbox
+
+}
+
+.tweet-header {
+    display: flex;
+    align-items: center;
+}
+
+.profile-link {
+    margin-right: 10px; 
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.handle {
+    color: gray; 
+}
+
+.tweet-content {
+    margin: 10px 0; 
+    line-height: 1.4; 
+}
+
+.tweet-image img {
+    max-width: 100%; 
+    border-radius: 10px; 
+}
+
+
+
+.sidenav {
+    position: fixed;
+    top: 0;
+    left: -500px; /* Initially hidden off-screen */
+    width: 230px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 60px;
+    transition: left 0.3s ease; /* Smooth transition for showing/hiding */
+    z-index: 1000; /* Ensure it appears above other content */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-bottom: 20px; /* Add some padding at the bottom */
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px; /* Adjust padding for links */
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1; /* Change color on hover */
+}
+
+.close-btn {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+
+.sidenav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: background 0.3s; /* Smooth transition for hover */
+}
+
+.sidenav a:hover {
+    background: #006cb4; /* Change color on hover */
+}
+
+.sidenav.active {
+    left: 0; /* Show the menu */
+}
+
+.ham-icon.rotate {
+    transform: rotate(90deg); /* Rotate the image */
+}
+.close-btn {
+position: absolute;
+top: 100px;
+right: 400px;
+left: px;
+font-size: 50px;
+color: rgb(255, 255, 255);
+cursor: pointer;
+transition: color 0.3s;
+}
+
+.close-btn:hover {
+    color: #ff4d4d; /* Change color on hover */
+}
+
+
+
+
+.heart-checkbox input {
+    position: absolute;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.heart-checkbox .heart {
+    position: relative;
+    width: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 4px;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.heart-checkbox .heart:before, 
+.heart-checkbox .heart:after {
+    content: "";
+    position: absolute;
+    width: 12.5px; /* Reduced from 25px */
+    height: 20.5px;  /* Reduced from 40px */
+    border-radius: 12.5px 12.5px 0 0; /* Adjusted radius proportionally */
+    background-color: #ccc;
+    transition: background-color 0.3s ease;
+}
+
+.heart-checkbox .heart:before {
+    left: 6px;  /* Adjusted based on the reduced size */
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.heart-checkbox .heart:after {
+    left: -6.25px; /* Adjusted based on the reduced size */
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+.heart-checkbox input:checked ~ .heart:before,
+.heart-checkbox input:checked ~ .heart:after {
+    background-color: #ff0000;
+}
+
+
+.video-container {
+    overflow: hidden;
+    border-radius: 20px; /* Adjust the border-radius for rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.video-container video {
+    width: 100%;
+    height: auto;
+    border-radius: 20px; /* Match the border-radius of the container */
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    .header {
+        display: flex;
+        font-family: "Roboto", system-ui;
+        display:flexbox
+    }
     
-
-</html>
+    .profile {
+        width: 40px;
+        margin-left: 97px;
+        margin-top: 10px;
+    }
+    
+    .logo {
+        width:50px;
+        border-radius: 50%;
+        margin-top: 10px;
+    }
+    
+    .upgrade {
+        margin-left: -430px;
+        margin-top: 10px;
+        padding-left: 18px;
+        padding-right: 18px;
+        background-color: white;
+        border-radius: 50px; 
+        border-color: rgb(110, 110, 110);
+        border-style: solid;
+        font-weight: bold;
+        font-size: 17px;
+        color: black;
+        width: auto;
+        height: 45px;
+        display: inline-block; 
+    }
+    
+    
+    .menu {
+        display: flex;
+        padding-top: 28px;
+        font-family: "Roboto", system-ui;
+    
+    }
+    
+    .for-you {
+        width: 30px;
+        padding-right: -270px;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: bold;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .following {
+        width: 30px;
+        padding-left: 8px;
+        padding-right: 70px;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: bold;
+        font-size: 20px;
+        color: rgb(134, 134, 134);
+        padding-bottom: 0px;
+        text-align: center;
+    }
+    
+}
