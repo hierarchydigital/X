@@ -350,7 +350,7 @@ transition: color 0.3s;
     
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
     body {
         overflow-x: hidden;
     }
@@ -428,7 +428,84 @@ transition: color 0.3s;
     html, body {
         overflow-x: hidden; /* Disable horizontal scrolling */
     }
-    
+}
 
+@media (max-width: 900px) {
+    body {
+        overflow-x: hidden;
+    }
+    .header {
+        display: flex;
+        font-family: "Roboto", system-ui;
+
+    }
     
+    .profile {
+        width: 40px;
+        margin-left: 106px;
+        margin-top: 10px;
+    }
+    
+    .logo {
+        width:50px;
+        border-radius: 50%;
+        margin-top: 10px;
+    }
+    
+    .upgrade {
+        margin-left: -434px;
+        margin-top: 10px;
+        padding-left: 18px;
+        padding-right: 18px;
+        background-color: white;
+        border-radius: 50px; 
+        border-color: rgb(110, 110, 110);
+        border-style: solid;
+        font-weight: bold;
+        font-size: 17px;
+        color: black;
+        width: auto;
+        height: 45px;
+        display: inline-block; 
+    }
+    
+    
+    .menu {
+        padding-top: 28px;
+        font-family: "Roboto", system-ui;
+    
+    }
+    
+    .for-you {
+        width: 30px;
+        margin-left: 80px;
+        margin-right: auto;
+        font-weight: bold;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .following {
+        width: 30px;
+        padding-left: 8px;
+        padding-right: 70px;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: bold;
+        font-size: 20px;
+        color: rgb(134, 134, 134);
+        padding-bottom: 0px;
+        text-align: center;
+    }
+    .tweet-container {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        width: 87%;
+    }
+    html, body {
+        overflow-x: hidden; /* Disable horizontal scrolling */
+    }
 }
