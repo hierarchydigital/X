@@ -266,91 +266,7 @@ transition: color 0.3s;
     object-fit: cover;
 }
 
-@media (max-width: 600px) {
-    body {
-        overflow-x: hidden;
-    }
-    .header {
-        display: flex;
-        font-family: "Roboto", system-ui;
-
-    }
-    
-    .profile {
-        width: 40px;
-        margin-left: 97px;
-        margin-top: 10px;
-    }
-    
-    .logo {
-        width:50px;
-        border-radius: 50%;
-        margin-top: 10px;
-    }
-    
-    .upgrade {
-        margin-left: -430px;
-        margin-top: 10px;
-        padding-left: 18px;
-        padding-right: 18px;
-        background-color: white;
-        border-radius: 50px; 
-        border-color: rgb(110, 110, 110);
-        border-style: solid;
-        font-weight: bold;
-        font-size: 17px;
-        color: black;
-        width: auto;
-        height: 45px;
-        display: inline-block; 
-    }
-    
-    
-    .menu {
-        padding-top: 28px;
-        font-family: "Roboto", system-ui;
-    
-    }
-    
-    .for-you {
-        width: 30px;
-        padding-right: -270px;
-        margin-left: auto;
-        margin-right: auto;
-        font-weight: bold;
-        font-size: 20px;
-        color: rgb(0, 0, 0);
-        display: inline-block;
-        text-align: center;
-    }
-    
-    .following {
-        width: 30px;
-        padding-left: 8px;
-        padding-right: 70px;
-        margin-left: auto;
-        margin-right: auto;
-        font-weight: bold;
-        font-size: 20px;
-        color: rgb(134, 134, 134);
-        padding-bottom: 0px;
-        text-align: center;
-    }
-    .tweet-container {
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-        width: 87%;
-    }
-    html, body {
-        overflow-x: hidden; /* Disable horizontal scrolling */
-    }
-    
-
-    
-}
-
-@media (max-width: 800px) {
+@media (min-width: 425px) {
     body {
         overflow-x: hidden;
     }
@@ -428,9 +344,108 @@ transition: color 0.3s;
     html, body {
         overflow-x: hidden; /* Disable horizontal scrolling */
     }
+    .prof-logo {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-left: -2px;
+    }
 }
+@media (max-width: 667px)  {
 
-@media (max-width: 900px) {
+    .header {
+        margin-left: -11%;
+        font-family: "Roboto", system-ui;
+    }
+    
+    .profile {
+        width: 30px;
+        margin-left: 20px;
+    }
+    
+    .logo {
+        width: 50px;
+        border-radius: 50%;
+        margin-left: 52px;
+        margin-right: -35px;
+    }
+    
+    .upgrade {
+
+        background-color: white;
+        border-radius: 50px; 
+        border: 1px solid rgb(110, 110, 110); /* Added border styling */
+        font-weight: bold;
+        font-size: 17px;
+        color: black;
+        display: inline-block; 
+
+    }
+    
+    .menu {
+        padding-top: 28px;
+        font-family: "Roboto", system-ui;
+    }
+    
+    .for-you {
+        width: auto; /* Set to auto for flexible width */
+        margin-left: 5px; /* Add a bit of margin */
+        font-weight: bold;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        text-align: center;
+    }
+    
+    .following {
+        width: auto; /* Set to auto for flexible width */
+        margin-left: 10px; /* Add a bit of margin */
+        font-weight: bold;
+        font-size: 20px;
+        color: rgb(134, 134, 134);
+        text-align: center;
+    }
+    
+    .tweet-container {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        width: 100%;
+    }
+
+    html, body {
+        overflow-x: hidden; /* Disable horizontal scrolling */
+    }
+    .prof-logo {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-left: -2px;
+    }
+    .user-info {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .username {
+        font-weight: bold;
+    }
+    
+    .handle {
+        color: gray; 
+    }
+    
+    .tweet-content {
+        margin: 10px 0; 
+        line-height: 1.4; 
+    }
+    
+    .tweet-image img {
+        max-width: 100%; 
+        border-radius: 10px; 
+    }
+    
+}
+@media (min-width: 768px){
     body {
         overflow-x: hidden;
     }
@@ -508,77 +523,14 @@ transition: color 0.3s;
     html, body {
         overflow-x: hidden; /* Disable horizontal scrolling */
     }
-}
-@media (max-width: 1000px) {
-
-    .header {
-        display: flex;
-        justify-content: space-between; /* This evenly spaces items */
-        align-items: center; /* Vertically centers items */
-        font-family: "Roboto", system-ui;
-    }
-    
-    .profile {
-        width: 40px;
-        margin-top: 10px;
-    }
-    
-    .logo {
+    .prof-logo {
         width: 50px;
+        height: 50px;
         border-radius: 50%;
-        margin-top: 10px;
-    }
-    
-    .upgrade {
-        padding-left: 18px;
-        padding-right: 18px;
-        background-color: white;
-        border-radius: 50px;
-        border-color: rgb(110, 110, 110);
-        border-style: solid;
-        font-weight: bold;
-        font-size: 17px;
-        color: black;
-        height: 45px;
-        cursor: pointer;
-    }
-    
-    .menu {
-        padding-top: 28px;
-        font-family: "Roboto", system-ui;
-        margin-left: 14%;
-    }
-    
-    .for-you {
-        width: auto; /* Set to auto for flexible width */
-        margin-left: 10%; /* Pushes this element to the right */
-        font-weight: bold;
-        font-size: 20px;
-        color: rgb(0, 0, 0);
-        display: inline-block;
-        text-align: right;
-    }
-    
-    .following {
-        width: auto; /* Set to auto for flexible width */
-        margin-left: 10%; /* Optional: small gap from for-you */
-        font-weight: bold;
-        font-size: 20px;
-        color: rgb(134, 134, 134);
-        display: inline-block;
-        text-align: center;
-    }
-    
-    .tweet-container {
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-        width: 100%;
-        margin-left: 5%;
+        margin-left: -2px;
     }
 }
-
-@media (max-width: 1200px) {
+@media (max-width: 1020px) {
     body {
         overflow-x: hidden;
     }
@@ -656,8 +608,14 @@ transition: color 0.3s;
     html, body {
         overflow-x: hidden; /* Disable horizontal scrolling */
     }
+    .prof-logo {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-left: -2px;
+    }
 }
-@media (max-width: 1440px) {
+@media (min-width: 1440px) {
     body {
         overflow-x: hidden;
     }
@@ -669,7 +627,7 @@ transition: color 0.3s;
     
     .profile {
         width: 40px;
-        margin-left: 125px;
+        margin-left: 875px;
         margin-top: 10px;
     }
     
@@ -680,7 +638,7 @@ transition: color 0.3s;
     }
     
     .upgrade {
-        margin-left: -408px;
+        margin-left: 320px;
         margin-top: 10px;
         padding-left: 18px;
         padding-right: 18px;
@@ -705,8 +663,8 @@ transition: color 0.3s;
     
     .for-you {
         width: 35px;
-        margin-left: 70px;
-        margin-right: auto;
+        margin-left: 490px;
+        margin-right: 20px;
         font-weight: bold;
         font-size: 20px;
         color: rgb(0, 0, 0);
@@ -716,10 +674,10 @@ transition: color 0.3s;
     
     .following {
         width: 30px;
-        padding-left: 8px;
-        padding-right: 70px;
+        padding-left: 0px;
+        padding-right: 10px;
         margin-left: auto;
-        margin-right: auto;
+        margin-right: 550px;
         font-weight: bold;
         font-size: 20px;
         color: rgb(134, 134, 134);
@@ -730,9 +688,16 @@ transition: color 0.3s;
         background-color: white;
         border-radius: 10px;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-        width: 88%;
+        width: 50%;
+        margin-left: 25%;
     }
     html, body {
         overflow-x: hidden; /* Disable horizontal scrolling */
+    }
+    .prof-logo {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-left: -2px;
     }
 }
